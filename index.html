@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Aggiungi questo META tag nell'<head> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+    <!-- Includi GSAP tramite CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <header class="header">
+    <div class="logo">
+      <img src="logo.svg" alt="Logo" />
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Chi Siamo</a></li>
+        <li><a href="#">Servizi</a></li>
+        <li><a href="#">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <div class="svg-text">
+      <tx
+        >Web<br />
+        su <br />
+        misura</tx
+      >
+      <svg class="distort">
+        <filter id="distortionFilter">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="2.01 .01"
+            numOctaves="5"
+            seed="2"
+            stitchTiles="noStitch"
+            x="0%"
+            y="0%"
+            width="100%"
+            height="100%"
+            result="noise"
+          ></feTurbulence>
+          <feDisplacementMap
+            in="SourceGraphic"
+            in2="noise"
+            scale="0"
+            xChannelSelector="R"
+            yChannelSelector="B"
+            x="0%"
+            y="0%"
+            width="100%"
+            height="100%"
+            filterUnits="userSpaceOnUse"
+          ></feDisplacementMap>
+        </filter>
+      </svg>
+    </div>
+
+    <div class="intro-section">
+      <div class="intro-text">
+        <h1>Creazione di Siti <br />Web Professionali a Trento</h1>
+        <p>
+          Benvenuto! Se stai cercando un
+          <strong>sito web moderno, veloce e su misura</strong> per la tua
+          attività a Trento, sei nel posto giusto. Mi occupo di progettazione e
+          sviluppo di siti web che non solo <strong>attirano clienti</strong>,
+          ma li coinvolgono e li fanno restare.
+        </p>
+        <a href="#contatti" class="cta-button">Richiedi un preventivo</a>
+      </div>
+      <div class="intro-image">
+        <img src="first-image.svg" alt="Creazione siti web a Trento" />
+      </div>
+    </div>
+
+    <div class="servizi-section">
+      <div class="servizi-text">
+        <h2>
+          <strong>I nostri servizi:</strong>
+        </h2>
+        <p>
+          Che tu abbia bisogno di un <strong>sito vetrina</strong>, un
+          <strong>e-commerce</strong> o una
+          <strong>piattaforma personalizzata</strong>, lavoro a stretto contatto
+          con te per trasformare le tue idee in realtà digitale. Con un design
+          accattivante, una navigazione intuitiva e un'ottimizzazione per i
+          motori di ricerca (SEO), il tuo sito sarà uno strumento potente per
+          crescere online.
+        </p>
+        <ul>
+          <li>Siti web responsive (adatti a dispositivi mobili)</li>
+          <li>E-commerce personalizzati</li>
+          <li>Ottimizzazione SEO per migliorare la visibilità</li>
+          <li>Manutenzione e aggiornamenti continui</li>
+        </ul>
+      </div>
+    </div>
+
+    <section id="why-choose-us">
+      <h2>Perché scegliere noi?</h2>
+      <div class="features">
+        <div class="feature">
+          <img  src="velocità.svg" alt="Competività" />
+          <h3>Competività</h3>
+          <p>Offriamo prezzi competitivi offrendo prodotti di alta qualità.</p>
+        </div>
+        <div class="feature">
+          <img src="seo.svg" alt="SEO" />
+          <h3>SEO</h3>
+          <p>Ottimizziamo il tuo sito per ottenere il miglior ranking nei motori di ricerca.</p>
+        </div>
+        <div class="feature">
+          <img src="supporto.svg" alt="Supporto" />
+          <h3>Supporto</h3>
+          <p>Assistenza dedicata per ogni tua esigenza.</p>
+        </div>
+      </div>
+    </section>
+    
+
+    
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.halo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
+
+    <script src="vanta-background.js"></script>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <div class="footer-content">
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Termini di Servizio</a></li>
+        <li><a href="#">Contatti</a></li>
+      </ul>
+      <p>&copy; 2025 Utopia. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+</html>
